@@ -50,7 +50,8 @@ class ImageServiceProviderLaravel4 extends ServiceProvider
 
                     // abort if file not found
                     if ($image_path === false) {
-                        $app->abort(404);
+                        //$app->abort(404);
+                        $image_path = 'http://placehold.it/1000&text=placeholder';
                     }
 
                     // define template callback
